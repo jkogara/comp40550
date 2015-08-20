@@ -1,0 +1,85 @@
+body {
+        font-family: arial,helvetica,verdana,sans-serif;
+}
+h1 {
+        font-size: 120%
+}
+h2 {
+         font-size: 110%
+}
+h3 {
+         font-size: 105%
+}
+
+table.bar-chart-table {
+        border-width: 0px;
+        border-spacing: 1px ;
+        border-collapse: collapse;
+}
+
+td.bar-chart-table {
+        border-width: 0px;
+        padding: 1px;
+        border-style: solid;
+        text-align: left;
+}
+
+table.results {
+        border-width: 0px;
+        border-spacing: 0px ;
+        border-style: solid;
+        border-color: gray;
+        border-collapse: collapse;
+        empty-cells: hide;
+}
+
+td {
+        border-width: 1px;
+        padding: 3px;
+        border-style: solid;
+        border-color: gray;
+        text-align: left;
+}
+
+td.results {
+        background-color: white;
+}
+td.resultsodd {
+        background-color: #E5E5E5;
+}
+
+td.header {
+           text-align: center;
+           font-weight: 400;
+
+
+}
+
+
+ a.bigcollapsecontrol {
+                color: blue;
+        background: transparent;
+        text-decoration: none;
+                font-size: 90%;
+                }
+ a.twistie {color: blue;
+        background: transparent;
+        text-decoration: none;
+                font-size: 115%;
+                font-weight: bold;
+                }
+
+img {
+}
+img.plot {
+}
+img.barchart {
+}
+
+
+div.navigation {
+    margin-right: 5px;
+    display: none;
+}	
+div.main {
+}
