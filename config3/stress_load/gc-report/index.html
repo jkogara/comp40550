@@ -9,7 +9,6 @@
 <a href="#summary">Summary</a><p/>
 <a href="#VGCLabels.free.flat.heap">Free heap (after collection)</a><p/>
 <a href="#VGCLabels.gc.scopes">GC type</a><p/>
-<a href="#VGCLabels.tenured.heap.size">Tenured heap size</a><p/>
 <a href="#VGCLabels.nursery.size">Nursery size</a><p/>
 <a href="#VGCLabels.pause.times.without.exclusive.access">Pause time</a><p/>
 <a href="#VGCLabels.flat.heap.size">Heap size</a><p/></div>
@@ -29,19 +28,19 @@ Summary<a tabindex="0"  name="summary"></a></h2>
  <tr>
 <td class="resultsodd">Forced collection count</td><td class="resultsodd">0</td></tr>
  <tr>
-<td class="results">Full collections</td><td class="results">58</td></tr>
+<td class="results">Full collections</td><td class="results">166</td></tr>
  <tr>
-<td class="resultsodd">Mean garbage collection pause (ms)</td><td class="resultsodd">496</td></tr>
+<td class="resultsodd">Mean garbage collection pause (ms)</td><td class="resultsodd">500</td></tr>
  <tr>
-<td class="results">Mean interval between collections (ms)</td><td class="results">5260</td></tr>
+<td class="results">Mean interval between collections (ms)</td><td class="results">1945</td></tr>
  <tr>
-<td class="resultsodd">Number of collections triggered by allocation failure</td><td class="resultsodd">381</td></tr>
+<td class="resultsodd">Number of collections triggered by allocation failure</td><td class="resultsodd">140</td></tr>
  <tr>
-<td class="results">Proportion of time spent in garbage collection pauses (%)</td><td class="results">10.94</td></tr>
+<td class="results">Proportion of time spent in garbage collection pauses (%)</td><td class="results">26.85</td></tr>
  <tr>
-<td class="resultsodd">Proportion of time spent unpaused (%)</td><td class="resultsodd">89.06</td></tr>
+<td class="resultsodd">Proportion of time spent unpaused (%)</td><td class="resultsodd">73.15</td></tr>
  <tr>
-<td class="results">Rate of garbage collection (MB/minutes)</td><td class="results">2214</td></tr></table>
+<td class="results">Rate of garbage collection (MB/minutes)</td><td class="results">2066</td></tr></table>
 <h2> 
 Free heap (after collection)<a tabindex="0"  name="VGCLabels.free.flat.heap"></a></h2> 
 
@@ -50,10 +49,10 @@ Free heap (after collection)<a tabindex="0"  name="VGCLabels.free.flat.heap"></a
  <tr><td class="header" rowspan="1">Mean</td><td class="header" rowspan="1">Minimum</td><td class="header" rowspan="1">Maximum</td></tr>
  <tr><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td></tr>
  <tr>
-<td class="results">49.2</td><td class="results">0.27</td><td class="results">105</td>
+<td class="results">57.2</td><td class="results">0.04</td><td class="results">112</td>
 </tr></table>
 <br/>
-<img src="VGCLabelsfreeflatheap_30.png" alt="image of Free heap (after collection) visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
+<img src="VGCLabelsfreeflatheap_137.png" alt="image of Free heap (after collection) visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
 <h2> 
 GC type<a tabindex="0"  name="VGCLabels.gc.scopes"></a></h2> 
 
@@ -61,22 +60,10 @@ GC type<a tabindex="0"  name="VGCLabels.gc.scopes"></a></h2>
 
  <tr><td class="header" rowspan="1">type</td><td class="header" rowspan="1">global</td><td class="header" rowspan="1">nursery</td></tr>
  <tr><td class="header" rowspan="1">Total Instances</td>
-<td class="results">58</td><td class="results">381</td>
+<td class="results">166</td><td class="results">140</td>
 </tr></table>
 <br/>
-<img src="VGCLabelsgcscopes_31.png" alt="image of GC type visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
-<h2> 
-Tenured heap size<a tabindex="0"  name="VGCLabels.tenured.heap.size"></a></h2> 
-
-<p/><table class="results">
-
- <tr><td class="header" rowspan="1">Mean</td><td class="header" rowspan="1">Minimum</td><td class="header" rowspan="1">Maximum</td></tr>
- <tr><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td></tr>
- <tr>
-<td class="results">192</td><td class="results">182</td><td class="results">192</td>
-</tr></table>
-<br/>
-<img src="VGCLabelstenuredheapsize_32.png" alt="image of Tenured heap size visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
+<img src="VGCLabelsgcscopes_138.png" alt="image of GC type visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
 <h2> 
 Nursery size<a tabindex="0"  name="VGCLabels.nursery.size"></a></h2> 
 
@@ -85,10 +72,10 @@ Nursery size<a tabindex="0"  name="VGCLabels.nursery.size"></a></h2>
  <tr><td class="header" rowspan="1">Mean</td><td class="header" rowspan="1">Minimum</td><td class="header" rowspan="1">Maximum</td></tr>
  <tr><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td></tr>
  <tr>
-<td class="results">46.1</td><td class="results">22.4</td><td class="results">58.0</td>
+<td class="results">65.9</td><td class="results">41.1</td><td class="results">70.6</td>
 </tr></table>
 <br/>
-<img src="VGCLabelsnurserysize_33.png" alt="image of Nursery size visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
+<img src="VGCLabelsnurserysize_139.png" alt="image of Nursery size visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
 <h2> 
 Pause time<a tabindex="0"  name="VGCLabels.pause.times.without.exclusive.access"></a></h2> 
 
@@ -97,10 +84,10 @@ Pause time<a tabindex="0"  name="VGCLabels.pause.times.without.exclusive.access"
  <tr><td class="header" rowspan="1">Mean</td><td class="header" rowspan="1">Minimum</td><td class="header" rowspan="1">Maximum</td><td class="header" rowspan="1">Total</td></tr>
  <tr><td class="header" rowspan="1">time (ms)</td><td class="header" rowspan="1">time (ms)</td><td class="header" rowspan="1">time (ms)</td><td class="header" rowspan="1">time (ms)</td></tr>
  <tr>
-<td class="results">89.8</td><td class="results">9.0</td><td class="results">593</td><td class="results">39418</td>
+<td class="results">284</td><td class="results">11.0</td><td class="results">690</td><td class="results">86792</td>
 </tr></table>
 <br/>
-<img src="VGCLabelspausetimeswithoutexclusiveaccess_34.png" alt="image of Pause time visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
+<img src="VGCLabelspausetimeswithoutexclusiveaccess_140.png" alt="image of Pause time visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
 <h2> 
 Heap size<a tabindex="0"  name="VGCLabels.flat.heap.size"></a></h2> 
 
@@ -109,10 +96,10 @@ Heap size<a tabindex="0"  name="VGCLabels.flat.heap.size"></a></h2>
  <tr><td class="header" rowspan="1">Mean</td><td class="header" rowspan="1">Minimum</td><td class="header" rowspan="1">Maximum</td></tr>
  <tr><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td><td class="header" rowspan="1">heap (MB)</td></tr>
  <tr>
-<td class="results">236</td><td class="results">182</td><td class="results">250</td>
+<td class="results">236</td><td class="results">204</td><td class="results">241</td>
 </tr></table>
 <br/>
-<img src="VGCLabelsflatheapsize_35.png" alt="image of Heap size visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
+<img src="VGCLabelsflatheapsize_141.png" alt="image of Heap size visualised by com.ibm.java.diagnostics.visualizer.displayer.plot.ZoomingPlotDataDisplayer."><br/>
 
 
 </div></body></html>
